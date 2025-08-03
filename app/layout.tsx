@@ -1,3 +1,6 @@
+// Opsi 1: Logo di Header (seperti di atas)
+
+// Opsi 2: Logo sebagai favicon
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -9,7 +12,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "EcoProfit - Dashboard Pemilahan Sampah",
   description: "Sistem monitoring dan analisis keuntungan pemilahan sampah",
-    generator: 'v0.dev'
+  generator: 'Khairil Zaki',
+  icons: {
+    icon: '/timbangan.svg',
+  }
 }
 
 export default function RootLayout({
@@ -30,3 +36,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+// Opsi 3: Jika ingin logo di dalam Sidebar, Anda perlu mengubah komponen Sidebar
