@@ -227,12 +227,12 @@ export default function Dashboard() {
             </p>
           </div>
           <div className="text-center p-4 bg-gradient-to-br from-red-50 to-red-100 rounded-lg hover:shadow-md transition-shadow duration-300">
-            <p className="text-gray-600 text-sm mb-2">Keuntungan Sebelum Pilah</p>
+            <p className="text-gray-600 text-sm mb-2">Estimasi Keuntungan Sebelum Pilah</p>
             <h2 className="text-3xl font-bold text-red-500">Rp {totalEarningsBeforeSorting.toLocaleString("id-ID")}</h2>
             <p className="text-xs text-gray-500 mt-1">Rp {priceBeforeSorting.toLocaleString("id-ID")}/kg</p>
           </div>
           <div className="text-center p-4 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-lg hover:shadow-md transition-shadow duration-300">
-            <p className="text-gray-600 text-sm mb-2">Keuntungan Setelah Pilah</p>
+            <p className="text-gray-600 text-sm mb-2">Estimasi Keuntungan Setelah Pilah</p>
             <h2 className="text-3xl font-bold text-emerald-600">Rp {totalEarnings.toLocaleString("id-ID")}</h2>
             <p className="text-xs text-gray-500 mt-1">Rp {priceAfterSorting.toLocaleString("id-ID")}/kg</p>
           </div>
@@ -290,8 +290,8 @@ export default function Dashboard() {
             <div className="text-3xl font-bold text-teal-600 mb-2">
               Rp {calculations.profitDifference.toLocaleString("id-ID")}
             </div>
-            <div className="text-sm text-gray-600 font-medium">Selisih Keuntungan</div>
-            <div className="text-xs text-teal-500 mt-1">keuntungan tambahan</div>
+            <div className="text-sm text-gray-600 font-medium">Estimasi Selisih Keuntungan</div>
+            <div className="text-xs text-teal-500 mt-1">Keuntungan tambahan</div>
           </div>
         </div>
       </div>

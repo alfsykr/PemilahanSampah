@@ -72,7 +72,7 @@ export default function DataLoadCell() {
       {/* Current Weight Display - Ubah ke gr saja dengan font lebih besar */}
       <div className="bg-white rounded-xl shadow-lg p-6 animate-slide-up">
         <div className="text-center">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Berat Pada Mesin Saat ini</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Berat Pada Wadah Saat ini</h2>
           <div className="text-8xl font-bold text-emerald-600 mb-4 animate-pulse">
             {realtimeCurrentWeightGrams.toLocaleString()} gr
           </div>
@@ -89,7 +89,7 @@ export default function DataLoadCell() {
           <div>
             <div className="text-3xl mb-2">💰</div>
             <div className="text-2xl font-bold">Rp {totalEarnings.toLocaleString("id-ID")}</div>
-            <div className={"text-emerald-100"}>Total Keuntungan</div>
+            <div className={"text-emerald-100"}>Estimasi Total Keuntungan</div>
             <div className="text-xs mt-1 opacity-80">Rp {priceAfterSorting.toLocaleString("id-ID")}/kg</div>
           </div>
           <div>
@@ -113,11 +113,11 @@ export default function DataLoadCell() {
               <span className="font-semibold">Per gr</span>
             </div>
             <div className="flex justify-between items-center p-3 bg-red-50 rounded-lg">
-              <span className="text-gray-600">Harga Sebelum Pilah:</span>
+              <span className="text-gray-600">Estimasi Harga Sebelum Pilah:</span>
               <span className="font-semibold text-red-600">Rp 8.000/kg</span>
             </div>
             <div className="flex justify-between items-center p-3 bg-emerald-50 rounded-lg">
-              <span className="text-gray-600">Harga Setelah Pilah:</span>
+              <span className="text-gray-600">Estimasi Harga Setelah Pilah:</span>
               <span className="font-semibold text-emerald-600">Rp 13.000/kg</span>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function DataLoadCell() {
               </span>
             </div>
             <div className="flex justify-between items-center p-3 bg-emerald-50 rounded-lg">
-              <span className="text-gray-600">Total Keuntungan:</span>
+              <span className="text-gray-600">Estimasi Total Keuntungan:</span>
               <span className="font-semibold text-emerald-600">Rp {totalEarnings.toLocaleString("id-ID")}</span>
             </div>
             <div className="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
